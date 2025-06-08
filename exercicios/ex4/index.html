@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myaudio {
+            display: none;
+        .playbutton .pausebutton
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        imagens dinamicas
+    </h1>
+    <p>tente abrir esse site em varios dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+<picture> 
+    <source media="(max-width:700px )" srcset="img/foto-p.png" type="image/png"> 
+    <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+    <img src="img/foto-g.png" alt="imagem flexivel">
+</picture>
+
+<h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir um audio no vs code</p>
+
+    <audio controls>
+        <source src="midia/audiopikaseloko.mp3" type="audio/mpeg">
+        <source id="myaudio" src="midia/audiopikaseloko.mp3" type="audio/mpeg">
+    </audio>
+        <button id="playbutton">PLAY</button>
+        <button id="pausebutton">PAUSE</button>
+        <script>
+            const audio = document.getElementById('myaudio');
+            const play = document.getElementById('playbutton');
+            const pause = document.getElementById('pausebutton');
+            playbutton.addEventListener('click', () => {audio.play()});
+            pausebutton.addEventListener('click', () => {audio.play()});
+
+        </script>
+        <html lang="en">
+            <button id="playbutton">PLAY</button>
+            <button id="pausebutton">PAUSE</button>
+            <script>
+                const audio = document.getElementById('myaudio');
+                const play = document.getElementById('playbutton');
+                const pause = document.getElementById('pausebutton');
+                playbutton.addEventListener('click', () => {audio.play()});
+                pausebutton.addEventListener('click', () => {audio.play()});
+            
+            </script>
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+
+
+</body>
+</html>
